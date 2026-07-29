@@ -1,19 +1,17 @@
 import requests
 
-url = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"
+def get_random_fact():
+    r = requests.get("https://uselessfacts.jsph.pl/random.json?language=en")
+    return r.json()["text"]
 
-def get_random_technology_fact():
-    response = requests.get(url)
-    if response.status_code == 200:
-        fact_data = response.json()
-        print(f"Did you know? {fact_data['text']}")
+def get_category_fact(category):
+    r = requests.get(f"https://uselessfacts.jsph.pl/random.json?language=en&category={category}")
+    return r.json()["text"]
 
-    else:
-        print("Failed to fetch fact")
+def get_daily_fact():
+    r = requests.get("https://uselessfacts.jsph.pl/today.json?language=en")
+    return r.json()["text"]
 
-
-while True:
-    user_input = input("Press Enter to get a random technology fact or type 'q' to quit...")
-    if user_input.lower() == 'q':
-        break
-    get_random_technology_fact()
+print("Random:", get_random_fact())
+print("Animal:", get_category_fact("animal"))
+print("Daily:", get_daily_fact())
