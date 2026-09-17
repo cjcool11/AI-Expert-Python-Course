@@ -1,0 +1,6 @@
+[2026-09-17 17:11:29] User: hello
+[2026-09-17 17:11:29] HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/meta-llama/Llama-3.2-11B-Instruct (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+[2026-09-17 17:13:21] User: wake up hello
+[2026-09-17 17:13:21] HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/meta-llama/Llama-3.2-11B-Instruct (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+[2026-09-17 17:15:38] User: wake up hello
+[2026-09-17 17:15:38] HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/meta-llama/Llama-3.2-11B-Instruct (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
